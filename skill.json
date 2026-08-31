@@ -1,0 +1,41 @@
+{
+  "name": "genpark-cinematic-storyboard-scene-sequence-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Cinematic storyboard scene sequence synthesizer generating shot compositions, camera angles, and continuity sheets.",
+  "author": "genpark",
+  "category": "cinematics",
+  "tags": [
+    "storyboard-generator",
+    "cinematography",
+    "shot-planning",
+    "camera-framing",
+    "visual-scripting"
+  ],
+  "inputs": {
+    "screenplay_scene_description": {
+      "type": "string"
+    },
+    "target_shots_count": {
+      "type": "integer"
+    },
+    "aspect_ratio": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "storyboard_id": {
+      "type": "string"
+    },
+    "shots_synthesized_count": {
+      "type": "integer"
+    },
+    "cinematography_continuity_score_pct": {
+      "type": "number"
+    },
+    "rendered_storyboard_sheet_pdf_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
